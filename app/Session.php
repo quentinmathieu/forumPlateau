@@ -40,10 +40,10 @@
         public static function isAdmin(){
 
 
-            // if(self::getUser() && self::getUser()->hasRole("ROLE_ADMIN")){
-            //     return true;
-            // }
-            // return false;
+            if(self::getUser() && self::getUser()->hasRole("ROLE_ADMIN")){
+                return true;
+            }
+            return false;
         }
 
     }

@@ -46,6 +46,7 @@ class SecurityController extends AbstractController implements ControllerInterfa
                 "pseudo" => $pseudo,
                 "email" => $email,
                 "password" => password_hash($password, PASSWORD_DEFAULT),
+                "role" => 0
             ];
 
 
